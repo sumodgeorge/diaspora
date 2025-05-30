@@ -2,10 +2,10 @@
 
 source "https://rubygems.org"
 
-gem "rails", "6.1.7.8"
+gem "rails", "7.0.8.7"
 
 # needed for actionmailer, can be removed when upgrading to rails 7
-gem "net-imap", require: false
+gem "net-imap", ">= 0.4.20", require: false
 gem "net-pop", require: false
 gem "net-smtp", require: false
 
@@ -15,7 +15,7 @@ gem "responders", "3.1.1"
 
 # Appserver
 
-gem "puma", "6.4.2", require: false
+gem "puma", "6.4.3", require: false
 
 # Federation
 
