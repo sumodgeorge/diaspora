@@ -2,7 +2,7 @@
 
 source "https://rubygems.org"
 
-gem "rails", "6.1.7.8"
+gem "rails", "6.1.7.9"
 
 # needed for actionmailer, can be removed when upgrading to rails 7
 gem "net-imap", require: false
@@ -33,7 +33,7 @@ gem "yajl-ruby",   "1.4.3"
 
 gem "devise", "4.9.4"
 gem "devise_lastseenable", "0.0.6"
-gem "devise-two-factor", "4.1.0"
+gem "devise-two-factor", "4.1.1"
 gem "rqrcode", "2.2.0"
 
 # Captcha
@@ -95,17 +95,17 @@ gem "uuid", "2.3.9"
 gem "babel-transpiler",  "0.7.0"
 gem "handlebars_assets", "0.23.9"
 gem "jquery-rails",      "4.6.0"
-gem "jquery-ui-rails",   "7.0.0"
+gem "jquery-ui-rails", "8.0.0"
 gem "js_image_paths",    "0.2.0"
-gem "js-routes",         "2.2.8"
+gem "js-routes", "2.2.9"
 
 # Localization
 
 gem "http_accept_language", "2.1.1"
-gem "rails-i18n",           "7.0.9"
+gem "rails-i18n", "7.0.10"
 
 # Map
-gem "leaflet-rails", "1.9.4"
+gem "leaflet-rails", "1.9.5"
 
 # Parsing
 
@@ -203,11 +203,11 @@ end
 
 group :development do
   # Linters
-  gem "haml_lint",      "0.58.0", require: false
-  gem "pronto",         "0.11.2", require: false
+  gem "haml_lint", "0.59.0", require: false
+  gem "pronto", "0.11.3", require: false
   gem "pronto-eslint",  "0.11.1", require: false
   gem "pronto-haml",    "0.11.1", require: false
-  gem "pronto-rubocop", "0.11.5", require: false
+  gem "pronto-rubocop", "0.11.6", require: false
   gem "pronto-scss",    "0.11.0", require: false
   gem "rubocop",        "1.64.0", require: false
   gem "rubocop-rails",  "2.25.0", require: false
@@ -243,7 +243,7 @@ group :test do
 
   # General helpers
 
-  gem "factory_bot_rails", "6.4.3"
+  gem "factory_bot_rails", "6.4.4"
   gem "shoulda-matchers",  "6.2.0"
   gem "timecop",           "0.9.8"
   gem "webmock",           "3.23.1", require: false
@@ -253,10 +253,10 @@ end
 
 group :development, :test do
   # RSpec (unit tests, some integration tests)
-  gem "rspec-rails", "6.1.2"
+  gem "rspec-rails", "6.1.3"
 
   # Cucumber (integration tests)
-  gem "cucumber-rails", "3.0.0", require: false
+  gem "cucumber-rails", "3.0.1", require: false
 
   # Jasmine (client side application tests (JS))
   gem "chrome_remote",             "0.3.0"
