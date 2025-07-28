@@ -2,7 +2,7 @@
 
 source "https://rubygems.org"
 
-gem "rails", "6.1.7.8"
+gem "rails", "6.1.7.9"
 
 # needed for actionmailer, can be removed when upgrading to rails 7
 gem "net-imap", require: false
@@ -33,7 +33,7 @@ gem "yajl-ruby",   "1.4.3"
 
 gem "devise", "4.9.4"
 gem "devise_lastseenable", "0.0.6"
-gem "devise-two-factor", "4.1.0"
+gem "devise-two-factor", "4.1.1"
 gem "rqrcode", "2.2.0"
 
 # Captcha
@@ -68,7 +68,7 @@ gem "autoprefixer-rails",     "10.4.16.0"
 gem "bootstrap-sass",         "3.4.1"
 gem "bootstrap-switch-rails", "3.3.3" # 3.3.4 and 3.3.5 is broken, see https://github.com/Bttstrp/bootstrap-switch/issues/691
 gem "sassc-rails",            "2.1.2"
-gem "sprockets-rails",        "3.4.2"
+gem "sprockets-rails", "3.5.0"
 
 # Database
 
@@ -84,7 +84,7 @@ gem "activerecord-import", "1.7.0"
 # File uploading
 
 gem "carrierwave", "3.0.7"
-gem "fog-aws",     "3.22.0"
+gem "fog-aws", "3.23.0"
 gem "mini_magick", "4.12.0"
 
 # GUID generation
@@ -95,22 +95,22 @@ gem "uuid", "2.3.9"
 gem "babel-transpiler",  "0.7.0"
 gem "handlebars_assets", "0.23.9"
 gem "jquery-rails",      "4.6.0"
-gem "jquery-ui-rails",   "7.0.0"
+gem "jquery-ui-rails", "8.0.0"
 gem "js_image_paths",    "0.2.0"
-gem "js-routes",         "2.2.8"
+gem "js-routes", "2.2.9"
 
 # Localization
 
 gem "http_accept_language", "2.1.1"
-gem "rails-i18n",           "7.0.9"
+gem "rails-i18n", "7.0.10"
 
 # Map
-gem "leaflet-rails", "1.9.4"
+gem "leaflet-rails", "1.9.5"
 
 # Parsing
 
-gem "nokogiri",          "1.16.5"
-gem "open_graph_reader", "0.8.0" # also update User-Agent in features/support/webmock.rb and open_graph_cache_spec.rb
+gem "nokogiri", "1.18.9"
+gem "open_graph_reader", "0.9.1" # also update User-Agent in features/support/webmock.rb and open_graph_cache_spec.rb
 gem "redcarpet",         "3.6.0"
 gem "ruby-oembed",       "0.17.0"
 gem "twitter-text",      "3.1.0"
@@ -236,14 +236,14 @@ group :test do
   # Cucumber (integration tests)
 
   gem "capybara",         "3.40.0"
-  gem "cuprite",          "0.15"
+  gem "cuprite", "0.15.1"
   gem "database_cleaner-active_record", "2.1.0"
 
   gem "cucumber-api-steps", "0.14", require: false
 
   # General helpers
 
-  gem "factory_bot_rails", "6.4.3"
+  gem "factory_bot_rails", "6.4.4"
   gem "shoulda-matchers",  "6.2.0"
   gem "timecop",           "0.9.8"
   gem "webmock",           "3.23.1", require: false
@@ -253,10 +253,10 @@ end
 
 group :development, :test do
   # RSpec (unit tests, some integration tests)
-  gem "rspec-rails", "6.1.2"
+  gem "rspec-rails", "6.1.3"
 
   # Cucumber (integration tests)
-  gem "cucumber-rails", "3.0.0", require: false
+  gem "cucumber-rails", "3.0.1", require: false
 
   # Jasmine (client side application tests (JS))
   gem "chrome_remote",             "0.3.0"
