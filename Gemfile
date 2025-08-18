@@ -2,7 +2,7 @@
 
 source "https://rubygems.org"
 
-gem "rails", "6.1.7.8"
+gem "rails", "7.1.5.2"
 
 # needed for actionmailer, can be removed when upgrading to rails 7
 gem "net-imap", require: false
@@ -79,7 +79,7 @@ group :postgresql, optional: true do
   gem "pg",     "1.5.6"
 end
 
-gem "activerecord-import", "1.7.0"
+gem "activerecord-import", "1.8.0"
 
 # File uploading
 
@@ -145,7 +145,7 @@ gem "active_model_serializers", "0.9.12"
 
 # Tags
 
-gem "acts-as-taggable-on", "10.0.0"
+gem "acts-as-taggable-on", "11.0.0"
 
 # URIs and HTTP
 
@@ -237,7 +237,7 @@ group :test do
 
   gem "capybara",         "3.40.0"
   gem "cuprite",          "0.15"
-  gem "database_cleaner-active_record", "2.1.0"
+  gem "database_cleaner-active_record", "2.2.0"
 
   gem "cucumber-api-steps", "0.14", require: false
 
