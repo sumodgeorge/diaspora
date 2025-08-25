@@ -158,7 +158,7 @@ gem "typhoeus",                 "1.4.1"
 
 # Views
 
-gem "gon",                     "6.4.0"
+gem "gon", "6.5.0"
 gem "hamlit",                  "3.0.3"
 gem "mobile-fu",               "1.4.0"
 gem "rails-timeago",           "2.20.0"
