@@ -152,7 +152,7 @@ gem "acts-as-taggable-on", "10.0.0"
 gem "addressable",              "2.8.6", require: "addressable/uri"
 gem "faraday",                  "2.9.0"
 gem "faraday-cookie_jar",       "0.0.7"
-gem "faraday-follow_redirects", "0.3.0"
+gem "faraday-follow_redirects", "0.4.0"
 gem "faraday-typhoeus",         "1.1.0", require: false
 gem "typhoeus",                 "1.4.1"
 
@@ -203,14 +203,14 @@ end
 
 group :development do
   # Linters
-  gem "haml_lint",      "0.58.0", require: false
+  gem "haml_lint", "0.59.0", require: false
   gem "pronto",         "0.11.2", require: false
   gem "pronto-eslint",  "0.11.1", require: false
   gem "pronto-haml",    "0.11.1", require: false
-  gem "pronto-rubocop", "0.11.5", require: false
+  gem "pronto-rubocop", "0.11.6", require: false
   gem "pronto-scss",    "0.11.0", require: false
-  gem "rubocop",        "1.64.0", require: false
-  gem "rubocop-rails",  "2.25.0", require: false
+  gem "rubocop", "1.66.0", require: false
+  gem "rubocop-rails", "2.25.1", require: false
 
   gem "faraday-retry", require: false # used by pronto/octokit
 
