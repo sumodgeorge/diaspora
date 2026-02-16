@@ -110,7 +110,7 @@ gem "leaflet-rails", "1.9.4"
 # Parsing
 
 gem "nokogiri",          "1.16.5"
-gem "open_graph_reader", "0.8.0" # also update User-Agent in features/support/webmock.rb and open_graph_cache_spec.rb
+gem "open_graph_reader", "0.9.1" # also update User-Agent in features/support/webmock.rb and open_graph_cache_spec.rb
 gem "redcarpet",         "3.6.0"
 gem "ruby-oembed",       "0.17.0"
 gem "twitter-text",      "3.1.0"
@@ -137,7 +137,7 @@ gem "omniauth-wordpress",             "0.2.2"
 gem "twitter",                        "8.0.0"
 
 # OpenID Connect
-gem "openid_connect", "2.3.0"
+gem "openid_connect", "2.3.1"
 
 # Serializers
 
@@ -150,9 +150,9 @@ gem "acts-as-taggable-on", "10.0.0"
 # URIs and HTTP
 
 gem "addressable",              "2.8.6", require: "addressable/uri"
-gem "faraday",                  "2.9.0"
-gem "faraday-cookie_jar",       "0.0.7"
-gem "faraday-follow_redirects", "0.3.0"
+gem "faraday", "2.14.1"
+gem "faraday-cookie_jar", "0.0.8"
+gem "faraday-follow_redirects", "0.4.0"
 gem "faraday-typhoeus",         "1.1.0", require: false
 gem "typhoeus",                 "1.4.1"
 
@@ -204,15 +204,15 @@ end
 group :development do
   # Linters
   gem "haml_lint",      "0.58.0", require: false
-  gem "pronto",         "0.11.2", require: false
+  gem "pronto", "0.11.3", require: false
   gem "pronto-eslint",  "0.11.1", require: false
   gem "pronto-haml",    "0.11.1", require: false
-  gem "pronto-rubocop", "0.11.5", require: false
+  gem "pronto-rubocop", "0.11.6", require: false
   gem "pronto-scss",    "0.11.0", require: false
   gem "rubocop",        "1.64.0", require: false
   gem "rubocop-rails",  "2.25.0", require: false
 
-  gem "faraday-retry", require: false # used by pronto/octokit
+  gem "faraday-retry", ">= 2.3.0", require: false # used by pronto/octokit
 
   # Debugging
   gem "pry"
